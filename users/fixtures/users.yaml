@@ -1,0 +1,18 @@
+- model: users.appuser
+  pk: 1
+  fields:
+    email: oth.lahrimi1996@gmail.com
+    password: $5$ULGv116i/c/H2tTh$GANBvd9eeoP8KjZVt6Mo0aVQR3dUho5NRmh0.5bSNgC
+    first_name: Othmane
+    last_name: LAHRIMI
+    creation_date: 2022-11-28 09:21:04.212390+00:00
+    last_logged_in_date: 2022-11-28 16:42:20.817574+00:00
+- model: users.appuser
+  pk: 3
+  fields:
+    email: oth.lahrimi1996@gmail.co
+    password: $5$FQfMDwZZJ08njJiB$TeGmZm866xrcBfZk55ZY3Q8l9E5QuJSsSTQsO809tb3
+    first_name: Ahmed
+    last_name: Mahmoud
+    creation_date: 2022-11-28 16:22:16.882469+00:00
+    last_logged_in_date: 2022-11-28 16:22:24.234504+00:00
