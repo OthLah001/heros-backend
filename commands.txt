@@ -1,0 +1,4 @@
+// Docker commands
+docker-compose build
+docker-compose up
+docker exec -it backend_heros_container /bin/bash
