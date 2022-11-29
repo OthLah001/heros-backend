@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from .models import Hero
 from backend.common import IsAuthenticate, AppPagination
 from rest_framework.generics import ListAPIView
-from .serializers import ListHerosSerializer
+from .serializers import ListHerosSerializer, HeroSerializer
 from rest_framework.exceptions import APIException
 from django.db.models import Q
 
@@ -51,3 +51,10 @@ class ListHerosView(ListAPIView):
         heros_qs = heros_qs.order_by(orderBy)
 
         return heros_qs
+
+class HeroView(APIView):
+    permission_classes = [IsAuthenticate]
+
+    def get(self, request, id, token):
+        hero = get_object_or_404(Hero, id=id)
+        return Response(HeroSerializer(hero).data, status=status.HTTP_200_OK)

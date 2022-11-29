@@ -6,4 +6,9 @@ class ListHerosSerializer(ModelSerializer):
 
     class Meta:
         model = Hero
-        fields = ['userId', 'name', 'powers']
+        fields = ['userId', 'id', 'name', 'powers']
+
+class HeroSerializer(ModelSerializer):
+    class Meta:
+        model = Hero
+        fields = ['name', 'description', 'powers']
