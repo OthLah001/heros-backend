@@ -1,0 +1,51 @@
+- model: heros.hero
+  pk: 1
+  fields:
+    user: 3
+    name: Batman
+    description: Rich guy with black suit
+    powers: He is rich
+- model: heros.hero
+  pk: 2
+  fields:
+    user: 3
+    name: Superman
+    description: ''
+    powers: Fly, Strong, Laser
+- model: heros.hero
+  pk: 4
+  fields:
+    user: 1
+    name: Spiderman
+    description: null
+    powers: Walk throw walls
+- model: heros.hero
+  pk: 5
+  fields:
+    user: 3
+    name: Avatar
+    description: 'Hello
+
+      it''s'
+    powers: Walk throw walls
+- model: heros.hero
+  pk: 6
+  fields:
+    user: 3
+    name: PPP
+    description: null
+    powers: cdck sdkn,csdcklsdopc ,sd
+- model: heros.hero
+  pk: 7
+  fields:
+    user: 3
+    name: TEst hero
+    description: Mahmoud
+    powers: oth.lahrimi1996@gmail.com
+- model: heros.hero
+  pk: 8
+  fields:
+    user: 3
+    name: OTHMANE LAHRIMI
+    description: null
+    powers: 'HELLO; P&? '

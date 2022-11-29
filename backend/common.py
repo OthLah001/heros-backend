@@ -12,6 +12,9 @@ class IsAuthenticate(BasePermission):
                 decoded_token = jwt.decode(token, settings.JWT_KEY, algorithms=[settings.JWT_ALGORITHM])
                 user = AppUser.objects.filter(id=decoded_token['user_id'])
                 is_allowed = user.exists()
+
+                if is_allowed:
+                    request.user = user.first()
         except:
             pass
 
